@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url("image3.jpg");
+}
+h1
+{
+color:Red;
+}
+</style>
+</head>
+<body>
+<script language="javascript"> 
+function validate() 
+{ 
+var flag=1; 
+if(flag==1) 
+{  
+window.self.location.href="return.html"
+} 
+else 
+{ 
+alert("INVALID INPUT"); 
+} 
+} 
+</script>
+<center>
+<form name="myform">
+<table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<tr><td><h1 style="color:Blue;text-align:center;margin-left:30px;">Return Book</h1></td></tr>
+  <tr><td><h2 style="color:Black;text-align:center;margin-left:30px">Book Name:</h2></td>
+  <td><input name="Book Name" type="Text" size="20"></td></tr>
+</table>
+<input type="button" value="Return" onClick="validate()">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="reset" value="Clear"> 
+</form>
+</body>
+</html>

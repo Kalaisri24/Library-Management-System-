@@ -1,0 +1,71 @@
+<html>  
+<body>
+<script language="javascript"> 
+function validate() 
+{ 
+var flag=1; 
+if(document.myform.Username.value==""||
+document.myform.Password.value==""||
+document.myform.RollNo.value==""||
+document.myform.Email.value==""||
+document.myform.PhoneNumber.value=="") 
+{ 
+flag=0; 
+alert("Enter the Detail");
+}
+var str=document.myform.PhoneNumber.value; 
+var x=new RegExp("^[0-9]+$"); 
+if(!(str.match(x))) 
+{ 
+if(!(str.length==10))
+flag=0;
+alert("Enter the PhoneNumber"); 
+} 
+var str1=document.myform.Password.value; 
+var x1=new RegExp("^[0-9]+$");
+if(!(str.match(x1))) 
+{ 
+flag=0; 
+alert("Enter the Password");
+}  
+if(flag==1) 
+{
+window.self.location.href="register.html"; 
+} 
+else 
+{
+alert("INVALID INPUT"); 
+document.myform.focus(); 
+} 
+} 
+</script>  
+<form name="myform">
+<h1 style="color:Blue;text-align:center;margin-left:30px;">CREATE ACCOUNT</h1>
+<center>
+<body background="pink.jpg">  
+<table border="0">
+<tr><td>Username:</td> 
+<td><input name="Username" type="text" size="20"></td></tr>
+<tr><td>Password:</td> 
+<td><input name="Password" type="password" size="20"></td></tr>
+<tr><td>RollNo:</td>
+<td><input name="RollNo" type="text" size="5"></td></tr>
+<tr><td>Email:</td>
+<td><input type="Email" name="Email" size="30"></td></tr>
+<tr><td>Gender:</td>
+<td><input type="radio" name="Gender"  value="male" >male<input type="radio"  name="Gender"  value="female">female</td></tr>
+<tr><td>PhoneNumber:</td><td><input name="PhoneNumber" type="text" size="10"></td></tr>
+</table>
+<br>
+<br>
+<input type="button" value="Submit" onClick="validate()">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="reset" value="Clear">
+</form>
+</body>
+</html>
+
+

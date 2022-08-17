@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url("image2.jpg");
+}
+h1
+{
+color:Yellow;
+}
+</style>
+</head>
+<body>
+<script language="javascript"> 
+function validate() 
+{ 
+var flag=1; 
+if(flag==1) 
+{  
+window.self.location.href="book.html"; 
+} 
+else 
+{ 
+alert("INVALID INPUT"); 
+} 
+} 
+</script>
+<center>
+<form name="myform">
+<table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<tr><td><h1><b>Available Books:</b></h1></td>
+  <td><select name="Available Books">
+  <option selected="" value="Default">-Select a Book-</option>
+  <option>Data Mining
+  <option>Windows Programming
+  <option>System Software
+  <option>Network Security
+  <option>Data Warehousing
+  <option>E-Commerce
+  <option>Multimedia
+  <option>Microprocessor
+  <option>Compiler Design
+  <option>Operating System
+  <option>Computational Method
+  <option>Web Technology
+  <option>Data Structure
+  <option>Computer Architecture
+  <option>Visual Programming
+  <option>Computer Networks
+  <option>Software Engineering
+</select></td></tr>
+</table>
+<input type="button" value="Add" onClick="validate()">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="reset" value="Clear"> 
+</form>
+</body>
+</html>
